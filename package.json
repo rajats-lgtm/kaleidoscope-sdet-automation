@@ -1,0 +1,33 @@
+{
+  "name": "kaleidoscope-sdet-automation",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript end-to-end automation framework (Page Object Model) for the Kaleidoscope scholarship application flow.",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "install:browsers": "playwright install --with-deps chromium",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:e2e": "playwright test --grep @e2e",
+    "report": "playwright show-report reports/html",
+    "typecheck": "tsc --noEmit",
+    "codegen": "playwright codegen https://apply.mykaleidoscope.com/program/sdet-test-scholarship",
+    "clean": "node -e \"require('fs').rmSync('reports',{recursive:true,force:true});require('fs').mkdirSync('reports',{recursive:true})\""
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.2.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3"
+  }
+}
