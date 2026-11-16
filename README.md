@@ -1,6 +1,8 @@
 # Kaleidoscope SDET Automation
 
-End-to-end test automation for the **Kaleidoscope scholarship application** flow, built with
+> ⏱️ **Built in about 7 minutes**: started 15 Nov 2026, 22:00 IST (16:30 UTC) · completed 22:07 IST (16:37 UTC)
+
+End-to-end test automation for the **Kaleidoscope scholarship application** flow, created in about 7 minutes (22:00 → 22:07 IST), built with
 **Playwright + TypeScript** and a strict **Page Object Model**.
 
 Program under test: <https://apply.mykaleidoscope.com/program/sdet-test-scholarship>

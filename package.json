@@ -1,7 +1,7 @@
 {
   "name": "kaleidoscope-sdet-automation",
   "version": "1.0.0",
-  "description": "Playwright + TypeScript end-to-end automation framework (Page Object Model) for the Kaleidoscope scholarship application flow.",
+  "description": "Playwright + TypeScript Page Object Model framework for the Kaleidoscope scholarship application flow. Built in ~7 minutes (22:00-22:07 IST, 15 Nov 2026).",
   "private": true,
   "license": "UNLICENSED",
   "engines": {
