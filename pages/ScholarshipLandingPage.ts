@@ -2,6 +2,9 @@ import { expect, type Locator, type Page } from '@playwright/test';
 import type { Applicant } from '../testdata/applicant.data';
 import { BasePage } from './BasePage';
 
+const PROGRAM_URL =
+  process.env.BASE_URL ?? 'https://apply.mykaleidoscope.com/program/sdet-test-scholarship';
+
 export class ScholarshipLandingPage extends BasePage {
   // Locators – adjust here if the portal copy changes -----------------------------------
   private readonly programHeading: Locator;
@@ -16,7 +19,7 @@ export class ScholarshipLandingPage extends BasePage {
   }
 
   async open(): Promise<void> {
-    await this.goto('/');
+    await this.goto(PROGRAM_URL);
   }
 
   async expectLoaded(): Promise<void> {
